@@ -15,7 +15,7 @@ https://florobart.github.io/docker-sae203/
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.1-PHP
 
 
-## &nbsp;&nbsp; 2.2-Docker
+## &nbsp;&nbsp;&nbsp;&nbsp; 2.2-Docker
 
 
 # 3-Utilisation du projet
