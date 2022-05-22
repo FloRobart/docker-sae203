@@ -12,7 +12,7 @@ https://florobart.github.io/docker-sae203/
 # 1-Présentation du projet
 
 # 2-Technologie utiliser
-\t ## 2.1-PHP
+  ## 2.1-PHP
 
 
   ## 2.2-Docker
