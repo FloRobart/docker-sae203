@@ -3,9 +3,9 @@ https://florobart.github.io/docker-sae203/
 
 # Sommaire :
 
-1-Présentation projet
-2-Technologie utiliser
-3-Utilisation du projet
+1-Présentation projet<br>
+2-Technologie utiliser<br>
+3-Utilisation du projet<br>
  
 
 
