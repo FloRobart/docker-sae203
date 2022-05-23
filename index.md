@@ -1,8 +1,8 @@
 https://florobart.github.io/docker-sae203/
-<h1><strong><strong> Compte rendu SAE 2.03 </strong></strong></h1>
 
-<br />
 <div align="center">
+    <h1><strong><strong><bold> Compte rendu SAE 2.03 </bold></strong></strong></h1>
+    <br />
     <h1><strong> Sommaire : </strong></h1>
     <br>
     <h2> 1-Présentation projet     </h2>
