@@ -22,7 +22,7 @@ La deuxième est une raison de sécurité parce qu'il faut sécuriser les compte
 
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.2-Docker
-Comme nous avons utiliser du PHP il nous fallais forcément un serveur pour pouvoir tester notre code et il faudra aussi un serveur pour distribuer le forum. Nous avons fais le choix d'utiliser docker parce que c'est simple d'utilisation, nous avons simplement à créée une image puis un container contenant notre code et l'image puis c'est tout, si ont veut changer de serveur ont à simplement à déplacé le container. C'est donc très simple d'utilisation et de maintenance.
+Comme nous avons utiliser du PHP il nous fallais forcément un serveur pour pouvoir tester notre code et il faudra aussi un serveur pour distribuer le forum. Nous avons donc fais le choix d'utiliser docker parce que c'est simple d'utilisation, nous avons simplement à créée une image puis un container contenant notre code et l'image puis c'est tout, si ont veut changer de serveur ont à simplement à déplacé le container. C'est donc très simple d'utilisation et de maintenance.
 <br /><br />
 L'image est ... **Expliquer ce qu'est l'image**
 
@@ -33,19 +33,16 @@ L'image est ... **Expliquer ce qu'est l'image**
 # 4-Utilisation du projet
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.1-Comment s'inscrire
-
 Pour s'inscrire, il faut clicker sur bouton "*inscription*" en haut à droite de la page principale, puis il faut choisir un identifiant et un mots de passe.
 Suite à sa appuyez sur le button "*s'inscrire*". Si votre pseudo et votre mot de passe est valide votre inscription sera validé et vous serrez rediriger vers la page d'acceuil, sinon votre inscription sera refuser il message de refus s'affiche et l'utilisateur est invité à recommencer.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.2-Comment ce connecter
-
 Il n'y a pas de méthode de connexion, cependant lors de la création d'un topic / réponse à un topic, vous devrez à chaque fois vous connectez.
 
 Par manque de temps nous avons opté pour ce système, un système de token était bien trop compliqué, et le système de
 sauvegarde par cookie était trop insécurisé.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.3-Comment créer un topic
-
 Pour créer un topic, voici les étapes :
 
 - Cliker sur le button, créer un topic <br />
@@ -55,7 +52,6 @@ Pour créer un topic, voici les étapes :
 Félication vous avez créer un topic.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.4-Comment répondre à un topic
-
 Pour répondre à un topic, voici les étapes :
 
 - Clicker sur le topic en question <br />
