@@ -55,15 +55,15 @@ Pour créer un topic, voici les étapes :
 - Cliker sur le button, créer un topic <br />
 - Mettre un sujet au topic             <br />
 - Mettre vos identifiant               <br />
-<br /><br />
+
 Félication vous avez créer un topic.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.4-Comment répondre à un topic
 
 Pour répondre à un topic, voici les étapes :
 
-- Cliker sur le topic en question <br />
-- Cliker sur répondre             <br />
+- Clicker sur le topic en question <br />
+- Clicker sur répondre             <br />
 - Ecrivez votre réponse           <br />
 - Mettez vos identifiant          <br />
 
