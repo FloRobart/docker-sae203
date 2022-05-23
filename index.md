@@ -24,7 +24,7 @@ La deuxième est une raison de sécurité parce qu'il faut sécuriser les compte
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.2-Docker
 Comme nous avons utiliser du PHP il nous fallais forcément un serveur pour pouvoir tester notre code et il faudra aussi un serveur pour distribuer le forum. Nous avons donc fais le choix d'utiliser docker parce que c'est simple d'utilisation, nous avons simplement à créée une image puis un container contenant notre code et l'image puis c'est tout, si ont veut changer de serveur ont à simplement à déplacé le container. C'est donc très simple d'utilisation et de maintenance.
 <br /><br />
-L'image est ... **Expliquer ce qu'est l'image**
+L'image est ... ***Expliquer ce qu'est l'image***
 
 
 # 3-Problème rencontré
@@ -68,7 +68,7 @@ Suite à sa appuyez sur le button "*s'inscrire*". Si votre pseudo et votre mot d
 Il n'y a pas de méthode de connexion dés l'arrivé sur le forum, cependant lors de la création d'un topic ou d'une réponse à un topic, votre nom d'utilisateur et votre mot de passe vous serons demander.
 Par manque de temps nous n'avons pas fait en sorte que l'utilisateur reste connecter sur le site mais nous avions à deux façon de la faire.
 <br /> <br />
-La première façon et de mettre le compte de l'utilisateur dans les cookies, le problème c'est que cette solution n'est pas du tout sécurisé, nous aurions donc opté pour le deuxième solution qui est un système de token qui permet **expliquer brièvement le principe des tokens** . Si nous avions eu le temps nous aurions donc réaliser cette solution qui est la plus sécurisé.
+La première façon et de mettre le compte de l'utilisateur dans les cookies, le problème c'est que cette solution n'est pas du tout sécurisé, nous aurions donc opté pour le deuxième solution qui est un système de token qui permet ***expliquer brièvement le principe des tokens***. Si nous avions eu le temps nous aurions donc réaliser cette solution qui est la plus sécurisé.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.3-Comment créer un topic
 Pour créer un topic, voici les étapes :
