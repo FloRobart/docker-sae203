@@ -34,19 +34,15 @@ L'image est ... **Expliquer ce qu'est l'image**
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.1-Comment s'inscrire
 
-&nbsp;&nbsp;&nbsp;&nbsp; Pour s'inscrire, il faut allez sur la page "*inscription*", puis choisissez un identifiant et un mots de passe.
-
-&nbsp;&nbsp;&nbsp;&nbsp; Suite à sa appuyez sur le button "*s'inscrire*", suite à sa la page vous retourne si vous avez pu vous inscrire, ou une erreur.
-
-&nbsp;&nbsp;&nbsp;&nbsp; L'erreur la plus présente est que votre identifiant est  déjà utilisé par quelqu'un.
+Pour s'inscrire, il faut clicker sur bouton "*inscription*" en haut à droite de la page principale, puis il faut choisir un identifiant et un mots de passe.
+Suite à sa appuyez sur le button "*s'inscrire*". Si votre pseudo et votre mot de passe est valide votre inscription sera validé et vous serrez rediriger vers la page d'acceuil, sinon votre inscription sera refuser il message de refus s'affiche et l'utilisateur est invité à recommencer.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.2-Comment ce connecter
 
-&nbsp;&nbsp;&nbsp;&nbsp; Il n'y a pas de méthode de connexion, cependant lors de la création d'un topic / réponse à un topic,
-&nbsp;&nbsp;&nbsp;&nbsp;vous devrez à chaque fois vous connectez.
+Il n'y a pas de méthode de connexion, cependant lors de la création d'un topic / réponse à un topic, vous devrez à chaque fois vous connectez.
 
-&nbsp;&nbsp;&nbsp;&nbsp; Par manque de temps nous avons opté pour ce système, un système de token était bien trop compliqué, et le système de
-&nbsp;&nbsp;&nbsp;&nbsp;sauvegarde par cookie était trop insécurisé.
+Par manque de temps nous avons opté pour ce système, un système de token était bien trop compliqué, et le système de
+sauvegarde par cookie était trop insécurisé.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.3-Comment créer un topic
 
