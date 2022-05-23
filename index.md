@@ -51,11 +51,11 @@ Lorsque qu'un utilisateur écrit un topic, si on ne traite pas le texte qu'il sa
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
 
-La fonction php :
+Nous avons résolu ce problème grace à la fonction php :
 
     htmlspecialchars($string)
 
-Permet de désactiver les balises html.
+qui permet de désactiver les balises html.
 
 
 # 4-Utilisation du projet
@@ -65,10 +65,10 @@ Pour s'inscrire, il faut clicker sur bouton "*inscription*" en haut à droite de
 Suite à sa appuyez sur le button "*s'inscrire*". Si votre pseudo et votre mot de passe est valide votre inscription sera validé et vous serrez rediriger vers la page d'acceuil, sinon votre inscription sera refuser il message de refus s'affiche et l'utilisateur est invité à recommencer.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.2-Comment ce connecter
-Il n'y a pas de méthode de connexion, cependant lors de la création d'un topic / réponse à un topic, vous devrez à chaque fois vous connectez.
-
-Par manque de temps nous avons opté pour ce système, un système de token était bien trop compliqué, et le système de
-sauvegarde par cookie était trop insécurisé.
+Il n'y a pas de méthode de connexion dés l'arrivé sur le forum, cependant lors de la création d'un topic ou d'une réponse à un topic, votre nom d'utilisateur et votre mot de passe vous serons demander.
+Par manque de temps nous n'avons pas fait en sorte que l'utilisateur reste connecter sur le site mais nous avions à deux façon de la faire.
+<br /> <br />
+La première façon et de mettre le compte de l'utilisateur dans les cookies, le problème c'est que cette solution n'est pas du tout sécurisé, nous aurions donc opté pour le deuxième solution qui est un système de token qui permet **expliquer brièvement le principe des tokens** . Si nous avions eu le temps nous aurions donc réaliser cette solution qui est la plus sécurisé.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.3-Comment créer un topic
 Pour créer un topic, voici les étapes :
