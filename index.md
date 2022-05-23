@@ -3,8 +3,8 @@ https://florobart.github.io/docker-sae203/
 
 # Sommaire :
 
-## 1-Présentation projet     <br/>
-## 2-Technologie utiliser    <br/>
+## 1-Présentation projet     <br />
+## 2-Technologie utiliser    <br />
 ## 3-Utilisation du projet   <br />
 ## 4-Les problèmes rencontré <br />
 
