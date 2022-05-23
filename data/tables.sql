@@ -1,11 +1,11 @@
 CREATE TABLE User (
-    idUser  INT PRIMARY KEY NOT NULL,
+    idUser INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     pseudo  VARCHAR,
-    hashMdp VARCHAR
+    hashMdp VARCHAR(255);
 );
 
 CREATE TABLE Topic (
-    idTopic INT PRIMARY KEY NOT NULL,
+    idTopic INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     titre   VARCHAR,
     contenu TEXT,
     idUser  INT REFERENCES(User)

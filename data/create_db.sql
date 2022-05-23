@@ -24,8 +24,62 @@ CREATE TABLE Reponse (
     contenu TEXT
 );
 
-INSERT INTO Topic (titre, contenu)
-VALUES ("Topic de test", "Floris est raciste");
+INSERT INTO Users (pseudo)
+VALUES ("Test");
+
+INSERT INTO Topic (titre, contenu, idUser)
+VALUES ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1),
+       ("Topic de test", "Floris est raciste", 1);
+
 
 INSERT INTO Reponse (idTopic, contenu)
 VALUES (1, "t'es guez bro");
