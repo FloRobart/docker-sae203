@@ -5,8 +5,8 @@ https://florobart.github.io/docker-sae203/
 
 ## 1-Présentation projet     <br />
 ## 2-Technologie utiliser    <br />
-## 3-Utilisation du projet   <br />
-## 4-Les problèmes rencontré <br />
+## 3-Les problèmes rencontré <br />
+## 4-Utilisation du projet   <br />
 
 <br /><br />
 
@@ -62,10 +62,10 @@ Félication vous avez créer un topic.
 
 Pour répondre à un topic, voici les étapes :
 
-- Cliker sur le topic en question,
-- Cliker sur répondre,
-- Ecrivez votre réponse,
-- Mettez vos identifiant.
+- Cliker sur le topic en question <br />
+- Cliker sur répondre             <br />
+- Ecrivez votre réponse           <br />
+- Mettez vos identifiant          <br />
 
-&nbsp;&nbsp;&nbsp;&nbsp; Félication vous avez répondu à un topic.
+Félication vous avez répondu à un topic.
 
