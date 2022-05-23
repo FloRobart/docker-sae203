@@ -30,7 +30,7 @@ $queryResult = $conn->query($query);
 	</head>
 	<body>
 		<header>
-			<h1>Forum de discussion</h1>
+			<h1><a href="index.php">Forum de discussion</a></h1>
 			<a href="inscription.html">S'inscrire</a>
 		</header>
 		<main>

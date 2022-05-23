@@ -31,7 +31,7 @@ if (!password_verify($mdpSaisi, $queryArray["hashMdp"])) {
 $topic = $_GET["topicid"];
 $topicContent = $_POST["contenuRep"];
 
-$query = "INSERT INTO Reponse (idTopic, contenu) VALUES (". $topic . ",'" . $topicContent ."');";
+$query = "INSERT INTO Reponse (idTopic, contenu, idUser) VALUES (". $topic . ",'" . $topicContent ."'," . $queryArray["idUser"] . ");";
 
 if (! $conn->query($query)) {
     echo "Erreur : " . $conn->error;
@@ -39,3 +39,29 @@ if (! $conn->query($query)) {
 
 
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Le forum</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta http-equiv="refresh" content="2; URL=topic.php?topicid=<?php echo $topic; ?>">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.php">Forum de discussion</a></h1>
+            <a href="inscription.html">S'inscrire</a>
+        </header>
+        <main>
+            <section>
+              <h2>Votre réponse a bien été postée</h2>
+              <p>Vous allez être redirigé vers la page du topic</p>
+            </section>
+        </main>
+        <footer>
+            <p>SAÉ 2.03 - Floris ROBART, Ruben GROUT, Florian BIZET</p>
+            <p>Inspiré des forums Blabla de jeuxvideo.com</p>
+        </footer>
+    </body>
+</html>
