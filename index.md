@@ -50,22 +50,22 @@ L'image est ... **Expliquer ce qu'est l'image**
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.3-Comment créer un topic
 
-&nbsp;&nbsp;&nbsp;&nbsp; Pour créer un topic, voici les étapes :
+Pour créer un topic, voici les étapes :
 
-&nbsp;&nbsp;&nbsp;&nbsp; - Cliker sur le button, créer un topic,
-&nbsp;&nbsp;&nbsp;&nbsp; - Mettre un sujet au topic,
-&nbsp;&nbsp;&nbsp;&nbsp; - Mettre vos identifiant.
-
-&nbsp;&nbsp;&nbsp;&nbsp; Félication vous avez créer un topic.
+- Cliker sur le button, créer un topic <br />
+- Mettre un sujet au topic             <br />
+- Mettre vos identifiant               <br />
+<br /><br />
+Félication vous avez créer un topic.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.4-Comment répondre à un topic
 
-&nbsp;&nbsp;&nbsp;&nbsp; Pour répondre à un topic, voici les étapes :
+Pour répondre à un topic, voici les étapes :
 
-&nbsp;&nbsp;&nbsp;&nbsp; - Cliker sur le topic en question,
-&nbsp;&nbsp;&nbsp;&nbsp; - Cliker sur répondre,
-&nbsp;&nbsp;&nbsp;&nbsp; - Ecrivez votre réponse,
-&nbsp;&nbsp;&nbsp;&nbsp; - Mettez vos identifiant.
+- Cliker sur le topic en question,
+- Cliker sur répondre,
+- Ecrivez votre réponse,
+- Mettez vos identifiant.
 
 &nbsp;&nbsp;&nbsp;&nbsp; Félication vous avez répondu à un topic.
 
