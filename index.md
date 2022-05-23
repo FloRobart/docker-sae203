@@ -16,7 +16,7 @@ Le forum on peut créer des topics, les rejoindres, discutter, répondre à une 
 
 # 2-Technologie utiliser
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.1-PHP
-Pour notre forum nous avons fait un site dynamique pour pouvoir générer les topic au fur et à mesure de leur 
+Pour notre forum nous avons fait un site dynamique pour pouvoir générer les topic au fur et à mesure de leur création par les utilisateurs.
 
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.2-Docker
