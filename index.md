@@ -3,12 +3,12 @@ https://florobart.github.io/docker-sae203/
 
 <div align="center">
 
-# Sommaire :
+    <h1> Sommaire : </h1>
 
-## 1-Présentation projet     <br />
-## 2-Technologie utiliser    <br />
-## 3-Les problèmes rencontré <br />
-## 4-Utilisation du projet   <br />
+<h2> 1-Présentation projet     </h2>
+<h2> 2-Technologie utiliser    </h2>
+<h2> 3-Les problèmes rencontré </h2>
+<h2> 4-Utilisation du projet   </h2>
 
 </div>
 <br /><br />
