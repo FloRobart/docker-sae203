@@ -31,24 +31,25 @@ L'image est ... **Expliquer ce qu'est l'image**
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; Git for windows
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Problème
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Problème
 Quand on créée un fichier sous linux et qu'on fait la commande "*git clone*" depuis windows, les séquences de fin de lignes de linux sont convertis pour windows par github, passant de "\n" pour linux à "\r\n" pour windows.
 
 Ce la ne pose pas de problème pour la majorité des fichiers, sauf pour les scripts bash. En effet, bash n'arrive pas à lire les "\r". Le problème c'est que notre container sur lequel tourne le serveur utilise une base linux, ce qui fais qu'il n'arrive pas à lire correctement le fichier bash qui sert à lancer le serveur.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
 La solution est donc de désactivé la conversion automatique des fichiers linux en fichier windows, ce que nous avons fais grâce à la commande
+
     git config --global core.autocrlf false
 
-permet de désactiver cette conversion.
+Le boolean à la fin de la commande définie le status de la configuration, true pour activé et false pour désactivé.
 
-## - Le code html dans les topic.
+## &nbsp;&nbsp;&nbsp;&nbsp; Le code html dans les topic.
 
-### Problème
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Problème
 
 Lorsque qu'un utilisateur écrit un topic, si on ne traite pas le texte qu'il saisie, il est possible qu'il insère du code HTML dans le topic et qu'il s'affiche dans la page. C'est dangereux car il pourrait re-dirigé les utilisateur sur des pages malvéillantes.
 
-### Solution
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
 
 La fonction php :
 
