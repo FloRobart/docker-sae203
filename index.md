@@ -37,7 +37,7 @@ Quand on créée un fichier sous linux et qu'on fait la commande "*git clone*" d
 Ce la ne pose pas de problème pour la majorité des fichiers, sauf pour les scripts bash. En effet, bash n'arrive pas à lire les "\r". Le problème c'est que notre container sur lequel tourne le serveur utilise une base linux, ce qui fais qu'il n'arrive pas à lire correctement le fichier bash qui sert à lancer le serveur.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
-La solution est donc de désactivé la conversion automatique des fichiers linux en fichier windows, ce que nous avons fais grâce à la commande :
+La solution est donc de désactivé la conversion automatique des fichiers linux en fichier windows, ce que nous avons fais grâce à la commande
     git config --global core.autocrlf false
 
 permet de désactiver cette conversion.
