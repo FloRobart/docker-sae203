@@ -29,19 +29,15 @@ L'image est ... **Expliquer ce qu'est l'image**
 
 # 3-Problème rencontré
 
-## - Git for windows
+## &nbsp;&nbsp;&nbsp;&nbsp; Git for windows
 
-### Problème
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Problème
+Quand on créée un fichier sous linux et qu'on fait la commande "*git clone*" depuis windows, les séquences de fin de lignes de linux sont convertis pour windows par github, passant de "\n" pour linux à "\r\n" pour windows.
 
-Quand on git clone depuis windows, les séquences de fin de lignes sont convertis pour windows,
-passant de "\n" à "\r\n".
+Ce la ne pose pas de problème pour la majorité des fichiers, sauf pour les scripts bash. En effet, bash n'arrive pas à lire les "\r". Le problème c'est que notre container sur lequel tourne le serveur utilise une base linux, ce qui fais qu'il n'arrive pas à lire correctement le fichier bash qui sert à lancer le serveur.
 
-Ce la ne pose pas de problème pour la majorité des fichiers, sauf pour les scripts bash. En effet, bash n'arrive pas à lire les "\r", par conséquent il ne peut pas démarrer le serveur.
-
-### Solution
-
-La commande :
-
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
+La solution est donc de désactivé la conversion automatique des fichiers linux en fichier windows, ce que nous avons fais grâce à la commande :
     git config --global core.autocrlf false
 
 permet de désactiver cette conversion.
