@@ -1,7 +1,32 @@
-<form action="ecrireTopic.php" method="post">
-    <p>Titre du topic : <input type="text" name="title"></p>
-    <p>Contenu        : <textarea name="content"></textarea></p>
-    <p>Pseudo       : <input type="text" name="pseudo"/></p>
-    <p>Mot de passe : <input type="password" name="mdp"/></p>
-    <input type="submit">
-</form>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Le forum</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Forum de discussion</h1>
+            <a href="inscription.html">S'inscrire</a>
+        </header>
+        <main>
+            <section>
+                <form action="ecrireTopic.php" method="post">
+                    <h2>Écrire un nouveau topic</h2>
+                    <p>Titre du topic : <input type="text" name="title"></p>
+                    <p>Contenu        : <textarea name="content"></textarea></p>
+                    <p>Pseudo       : <input type="text" name="pseudo"/></p>
+                    <p>Mot de passe : <input type="password" name="mdp"/></p>
+                    <input type="submit" value="Poster le Topic">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>SAÉ 2.03 - Floris ROBART, Ruben GROUT, Florian BIZET</p>
+            <p>Inspiré des forums Blabla de jeuxvideo.com</p>
+        </footer>
+    </body>
+</html>
+
+

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <?php 
+
+
 //Connexion bado
 $dbuser = 'review_site';
 $dbpass = 'JxSLRkdutW';
@@ -19,7 +21,6 @@ $responseQuery = "SELECT r.*, u.pseudo FROM Reponse r JOIN Users u ON r.idUser =
 
 $result = $conn->query($query)->fetch_array();
 $reponses = $conn->query($responseQuery);
-
 
 
 /*echo "<a href=\"repondre.php?topicid=" . $_GET["topicid"] . "\">Répondre au topic</a>"*/
@@ -43,9 +44,9 @@ $reponses = $conn->query($responseQuery);
           ?>
           <section>
             <?php 
-              echo "<h2>". $result["titre"] . "</h2>";
+              echo "<h2>" . $result["titre"] . "</h2>";
               echo "<p>Auteur : " . $result["pseudo"] . "</p>";
-              echo "<hr/>"
+              echo "<hr/>";
               echo "<pre>";
               echo htmlspecialchars($result["contenu"]);
               echo "</pre>";

@@ -56,6 +56,31 @@ main > a:hover {
     background-color: white;
 }
 
+article {
+    border: solid black 1px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 25%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+article form input[type="text"], article form input[type="password"] {
+    width: 50%;
+}
+
+section form input[type="text"], section form input[type="password"] {
+    width: 10%;
+}
+
+textarea {
+    width: 75%;
+    height: 10em;
+}
+
 section {
     width: 75%;
     border: solid black 1px;
@@ -77,6 +102,8 @@ section h2, section p {
     text-align: left;
     margin-left: 25px;
 }
+
+
 
 /* Home table style */
 
