@@ -22,7 +22,7 @@ La deuxième est une raison de sécurité parce qu'il faut sécuriser les compte
 
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.2-Docker
-Nous avons utiliser 
+Comme nous avons utiliser du PHP il nous fallais forcément un serveur pour pouvoir tester notre code et il faudra aussi un serveur pour distribuer le forum. Nous avons fais le choix d'utiliser docker parce que c'est simple d'utilisation, nous avons simplement à créée une image puis un container contenant notre code et l'image puis c'est tout, si ont veut changer de serveur ont à simplement à déplacé le container. C'est donc très simple d'utilisation et de maintenance.
 
 
 # 3-Les problèmes rencontré
