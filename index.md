@@ -27,7 +27,38 @@ Comme nous avons utiliser du PHP il nous fallais forcément un serveur pour pouv
 L'image est ... **Expliquer ce qu'est l'image**
 
 
-# 3-Les problèmes rencontré
+# 3-Problème rencontré
+
+## - Git for windows
+
+### Problème
+
+Quand on git clone depuis windows, les séquences de fin de lignes sont convertis pour windows,
+passant de "\n" à "\r\n".
+
+Ce la ne pose pas de problème pour la majorité des fichiers, sauf pour les scripts bash. En effet, bash n'arrive pas à lire les "\r", par conséquent il ne peut pas démarrer le serveur.
+
+### Solution
+
+La commande :
+
+    git config --global core.autocrlf false
+
+permet de désactiver cette conversion.
+
+## - Le code html dans les topic.
+
+### Problème
+
+Lorsque qu'un utilisateur écrit un topic, si on ne traite pas le texte qu'il saisie, il est possible qu'il insère du code HTML dans le topic et qu'il s'affiche dans la page. C'est dangereux car il pourrait re-dirigé les utilisateur sur des pages malvéillantes.
+
+### Solution
+
+La fonction php :
+
+    htmlspecialchars($string)
+
+Permet de désactiver les balises html.
 
 
 # 4-Utilisation du projet
