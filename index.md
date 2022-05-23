@@ -31,11 +31,41 @@ L'image est ... **Expliquer ce qu'est l'image**
 
 
 # 4-Utilisation du projet
+
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.1-Comment s'inscrire
+
+&nbsp;&nbsp;&nbsp;&nbsp; Pour s'inscrire, il faut allez sur la page "*inscription*", puis choisissez un identifiant et un mots de passe.
+
+&nbsp;&nbsp;&nbsp;&nbsp; Suite à sa appuyez sur le button "*s'inscrire*", suite à sa la page vous retourne si vous avez pu vous inscrire, ou une erreur.
+
+&nbsp;&nbsp;&nbsp;&nbsp; L'erreur la plus présente est que votre identifiant est  déjà utilisé par quelqu'un.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.2-Comment ce connecter
 
+&nbsp;&nbsp;&nbsp;&nbsp; Il n'y a pas de méthode de connexion, cependant lors de la création d'un topic / réponse à un topic,
+&nbsp;&nbsp;&nbsp;&nbsp;vous devrez à chaque fois vous connectez.
+
+&nbsp;&nbsp;&nbsp;&nbsp; Par manque de temps nous avons opté pour ce système, un système de token était bien trop compliqué, et le système de
+&nbsp;&nbsp;&nbsp;&nbsp;sauvegarde par cookie était trop insécurisé.
+
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.3-Comment créer un topic
 
+&nbsp;&nbsp;&nbsp;&nbsp; Pour créer un topic, voici les étapes :
+
+&nbsp;&nbsp;&nbsp;&nbsp; - Cliker sur le button, créer un topic,
+&nbsp;&nbsp;&nbsp;&nbsp; - Mettre un sujet au topic,
+&nbsp;&nbsp;&nbsp;&nbsp; - Mettre vos identifiant.
+
+&nbsp;&nbsp;&nbsp;&nbsp; Félication vous avez créer un topic.
+
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.4-Comment répondre à un topic
- 
+
+&nbsp;&nbsp;&nbsp;&nbsp; Pour répondre à un topic, voici les étapes :
+
+&nbsp;&nbsp;&nbsp;&nbsp; - Cliker sur le topic en question,
+&nbsp;&nbsp;&nbsp;&nbsp; - Cliker sur répondre,
+&nbsp;&nbsp;&nbsp;&nbsp; - Ecrivez votre réponse,
+&nbsp;&nbsp;&nbsp;&nbsp; - Mettez vos identifiant.
+
+&nbsp;&nbsp;&nbsp;&nbsp; Félication vous avez répondu à un topic.
+
