@@ -1,5 +1,5 @@
 https://florobart.github.io/docker-sae203/
-<style "text-align=center">
+<style text-align="center">
 # Compte rendu SAE 2.03
 
 # Sommaire :
