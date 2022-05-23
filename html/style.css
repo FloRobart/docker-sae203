@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("./fonts/OpenSans.ttf") format("truetype");
+}
+
+html, body {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+
+header {
+    color: white;
+    background-color: #21b3ed;
+    width: 100%;
+    margin-bottom: 2.5%;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    float: right;
+    padding: 30px;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main Style */
+
+main {
+    text-align: center;
+}
+
+main > a, main > a:visited {
+    background-color: #21b3ed;
+    color: white;
+    padding: 2px;
+    border: solid #21b3ed 1px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 2%;
+}
+
+main > a:hover {
+    color: #21b3ed;
+    background-color: white;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.topicTitle {
+    width : 75%;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td a {
+    color: black;
+    text-decoration: none;
+}
+
+td a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+/* Footer Style */
+
+footer {
+    color: white;
+    background-color: #21b3ed;
+    width: 100%;
+    margin-top: 2.5%;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1.25%;
+    padding-bottom: 1.25%;
+}

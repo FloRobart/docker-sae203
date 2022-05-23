@@ -13,7 +13,7 @@ if (! $conn) {
 $pseudoSaisi = $_POST["pseudo"];
 $mdpSaisi    = $_POST["mdp"];
 
-echo "Pseudo saisi : " . $pseudoSaisi . " <br/>Mot de passe saisi : " . $pseudoSaisi;
+echo "Pseudo saisi : " . $pseudoSaisi . " <br/>Mot de passe saisi : " . $mdpSaisi;
 
 $hash = password_hash($mdpSaisi, PASSWORD_BCRYPT);
 echo "<br/>" . $hash;
