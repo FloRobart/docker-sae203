@@ -17,6 +17,7 @@ Le forum on peut créer des topics, les rejoindres, discutter, répondre à une 
 # 2-Technologie utiliser
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.1-PHP
 Pour notre forum nous avons fait un site dynamique pour pouvoir générer les topic au fur et à mesure de leur création par les utilisateurs. Pour faire le dynamisme du site web nous avons donc utiliser le langage PHP Pour plusieur raison. La première c'est parce qu'il y a un principe de compte ou il faut ce connecter pour écrire sur le site et les conenctions à des comptes ce fais coté serveur, l'utilisation de PHP qui s'execute coté serveur nous à donc semblé être le meilleur choix. 
+<br />
 La deuxième est une raison de sécurité parce qu'il faut sécuriser les compte utilisateur et notament les mots de passe, avec le PHP cela est relativement facile à faire alors qu'avec l'alternative qui aurais été d'utilisé java-script cela n'aurais pas été possible. De plus le java-script s'éxecute sur la machine de chaque utilisateur, se qui est gourment en ressource pour eux et donc obligerai à avoir une assez bonne puissance de calcule alors qu'avec le PHP le code s'execute sur le serveur, se qui fais que n'importe qui avec une machine capable de faire tourner un navigateur peut aller sur notre forum.
 
 
