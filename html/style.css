@@ -56,6 +56,30 @@ main > a:hover {
     background-color: white;
 }
 
+section {
+    width: 75%;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+pre {
+    font-family: "Open Sans";
+    font-size: medium;
+    text-align: left;
+    margin-left: 25px;
+}
+
+section h2, section p {
+    text-align: left;
+    margin-left: 25px;
+}
+
+/* Home table style */
+
 table {
     margin-left: auto;
     margin-right: auto;

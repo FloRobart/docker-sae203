@@ -81,8 +81,8 @@ VALUES ("Topic de test", "Floris est raciste", 1),
        ("Topic de test", "Floris est raciste", 1);
 
 
-INSERT INTO Reponse (idTopic, contenu)
-VALUES (1, "t'es guez bro");
+INSERT INTO Reponse (idTopic, contenu, idUser)
+VALUES (1, "t'es guez bro", 1);
 
 GRANT ALL ON forum.* to review_site@localhost IDENTIFIED BY 'JxSLRkdutW';
 
