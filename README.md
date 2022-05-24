@@ -2,7 +2,7 @@
 
 Comment installer le forum ?
 
-1. Construire l'image via le Dockerfile
+1. Construire l'image via le Dockerfile (commande à exécuter dans le dossier où se trouve le dit Dockerfile)
 
        docker build -t <nom image> .
 
