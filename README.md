@@ -4,6 +4,7 @@ https://florobart.github.io/docker-sae203/
 Comment installer le forum ?
 
 1. Construire l'image via le Dockerfile
+
 Exécuter la commande suivante
 
        docker build -t <nom image> .
