@@ -16,13 +16,13 @@ Notre projet consiste a pouvoir mettre en place un forum de discussion facilemen
 
 # 2-Technologie utilisées
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.1-PHP
-Qui dit forum dit site dynamique. Deux choix s'offraient donc à nous : Javascript ou PHP ? Pour répondre à cette question, nous avons regardé de quoi le forum avait besoin pour fonctionner. Nous avons besoin d'une base de données stockant les comptes des utilisateurs, ainsi que les messages postés. Le JS pur coté client ne permet pas de communiquer avec une base de données. Et même si c'était possible, le JS est exécuté dans le navigateur, et est donc modifiable directement dans le navigateur. Les plus malins auraient donc pu jouer avec notre base de données comme si de rien n'était. 
+Qui dit forum dit site dynamique. Deux choix s'offraient donc à nous : Javascript (JS) pur ou PHP ? Pour répondre à cette question, nous avons regardé de quoi le forum avait besoin pour fonctionner. Nous avons besoin d'une base de données stockant les comptes des utilisateurs, ainsi que les messages postés. Le JS pur coté client ne permet pas de communiquer avec une base de données. Et même si c'était possible, le JS est exécuté dans le navigateur, et est donc modifiable directement dans celui-ci. Les plus malins auraient donc pu jouer avec notre base de données comme si de rien n'était. 
 <br /><br />
 Le PHP, en plus d'avoir une syntaxe assez simple, peut être mélangé à des pages HTML, contrairement à Javascript qui doit utiliser des méthodes particulières pour récupérer et modifier des éléments de la page html. PHP possède également des fonctions pour chiffrer les mots de passe, ce qui est bien utile puisqu'au lieu de stocker le mot de passe en dur dans la base de données, on stocke le mot de passe "hashé". PHP est assez simple d'utilisation mais reste très puissant.
 
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.2-Docker
-PHP est très utile, mais il faut un serveur dédié pour l'exécuter. C'est là que Docker entre en scène. Docker est un logiciel de virtualisation ayant pour particularité de faire des machines virtuelles, appelées conteneurs, très légères basées sur des "images". Une image est une configuration particulière que l'on peut appliquer à un conteneur Docker. Via le Dockerfile qui permet de créer l'image répondant à notre besoin, on peut très facilement créer des serveurs grâce aux conteneurs, en exposant les ports adéquats.
+PHP est très utile, mais il faut un serveur dédié pour l'exécuter. C'est là que Docker entre en scène. Docker est un logiciel de virtualisation ayant pour particularité de faire des "machines virtuelles", appelées conteneurs, très légères basées sur des "images". Une image est une configuration particulière que l'on peut appliquer à un conteneur Docker. On peut très facilement créer des serveurs grâce aux conteneurs en exposant les ports adéquats, et adapter leur fonctionnement à notre besoin via le dockerfile.
 <br /><br />
 Notre Dockerfile part d'une base Debian et installe les paquets nécessaires à notre forum : Serveur apache, MariaDB (Une implémentation MySQL Open Source), PHP, PHP-mysql. Elle expose ensuite les ports requis pour se connecter au serveur, puis exécute le script bash de configuration.
 
@@ -33,40 +33,39 @@ Notre Dockerfile part d'une base Debian et installe les paquets nécessaires à 
 ## &nbsp;&nbsp;&nbsp;&nbsp; Git for windows
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Problème
-Quand on créée un fichier sous linux et qu'on fait la commande "*git clone*" depuis windows, les séquences de fin de lignes de linux sont convertis pour windows par github, passant de "\n" pour linux à "\r\n" pour windows.
+Quand on créé un fichier sous linux et que l'on exécute la commande "*git clone*" depuis windows, les séquences de fin de ligne de linux sont converties pour windows par git, passant de "\n" pour linux à "\r\n" pour windows.
 
-Ce la ne pose pas de problème pour la majorité des fichiers, sauf pour les scripts bash. En effet, bash n'arrive pas à lire les "\r". Le problème c'est que notre container sur lequel tourne le serveur utilise une base linux, ce qui fais qu'il n'arrive pas à lire correctement le fichier bash qui sert à lancer le serveur.
+Cela ne pose pas de problème pour la majorité des fichiers, sauf pour les scripts bash. En effet, bash n'arrive pas à lire les "\r". Le problème c'est que notre container sur lequel tourne le serveur utilise une script bash pour se configurer. Ce problème empêche donc notre conteneur Docker de tout simplement démarrer.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
-La solution est donc de désactivé la conversion automatique des fichiers linux en fichier windows, ce que nous avons fais grâce à la commande
+La solution est donc de désactiver la conversion automatique des "\n", ce que nous avons fait grâce à la commande
 
     git config --global core.autocrlf false
 
-Le boolean à la fin de la commande définie le status de la configuration, true pour activé et false pour désactivé.
+Le booléen à la fin de la commande définit le statut de la configuration, true pour activé et false pour désactivé.
 
-## &nbsp;&nbsp;&nbsp;&nbsp; Le code html dans les topic.
+## &nbsp;&nbsp;&nbsp;&nbsp; Le code html dans les topics.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Problème
 
-Lorsqu'un utilisateur écrit un topic, si on ne traite pas le texte qu'il saisie, il est possible qu'il insère du code HTML dans le topic et qu'il s'affiche dans la page. C'est dangereux car il pourrait re-dirigé les utilisateur sur des pages malvéillantes.
+Lorsqu'un utilisateur écrit un topic, si on ne traite pas le texte qu'il saisit, il est possible qu'il insère du code HTML dans le topic et qu'il s'affiche dans la page. C'est dangereux car il pourrait re-diriger les utilisateur sur des pages malveillantes.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
 
-Nous avons résolu ce problème grace à la fonction php :
+Nous avons résolu ce problème grâce à la fonction php :
 
     htmlspecialchars($string)
 
-qui permet de désactiver les balises html.
+qui remplace les caractères des balises html par des équivalents.
 
 
 # 4-Utilisation du projet
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.1-Comment s'inscrire
-Pour s'inscrire, il faut clicker sur bouton "*inscription*" en haut à droite de la page principale, puis il faut choisir un identifiant et un mots de passe.
-Suite à sa appuyez sur le button "*s'inscrire*". Si votre pseudo et votre mot de passe est valide votre inscription sera validé et vous serrez rediriger vers la page d'acceuil, sinon votre inscription sera refuser il message de refus s'affiche et l'utilisateur est invité à recommencer.
+Pour s'inscrire, il suffit de cliquer sur le bouton "*s'inscrire*" en haut à droite de la page principale, puis de remplir les informations de son choix. Si votre pseudonyme n'a pas déjà été choisi par quelqu'un d'autre, une page confirmant votre inscription s'affichera et vous serez redirigés vers l'accueil.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.2-Comment ce connecter
-Il n'y a pas de méthode de connexion dés l'arrivé sur le forum, cependant lors de la création d'un topic ou d'une réponse à un topic, votre nom d'utilisateur et votre mot de passe vous serons demander.
+Il n'y a pas de méthode de connexion dès l'arrivée sur le forum, cependant lors de la création d'un topic ou d'une réponse à un topic, votre nom d'utilisateur et votre mot de passe vous seront demandés.
 Par manque de temps nous n'avons pas fait en sorte que l'utilisateur reste connecter sur le site mais nous avions à deux façon de la faire.
 <br /> <br />
 La première façon et de mettre le compte de l'utilisateur dans les cookies, le problème c'est que cette solution n'est pas du tout sécurisé, nous aurions donc opté pour le deuxième solution qui est un système de token qui permet ***expliquer brièvement le principe des tokens***. Si nous avions eu le temps nous aurions donc réaliser cette solution qui est la plus sécurisé.
