@@ -16,17 +16,16 @@ Notre projet consiste a pouvoir mettre en place un forum de discussion facilemen
 
 # 2-Technologie utilisées
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.1-PHP
-Pour notre forum nous avons fait un site dynamique pour pouvoir générer les topic au fur et à mesure de leur création par les utilisateurs. Pour faire le dynamisme du site web nous avons donc utiliser le langage PHP Pour plusieur raison. La première c'est parce qu'il y a un principe de compte ou il faut ce connecter pour écrire sur le site et les conenctions à des comptes ce fais coté serveur, l'utilisation de PHP qui s'execute coté serveur nous à donc semblé être le meilleur choix.
-
-Qui dit forum dit site dynamique. Deux choix s'offraient donc à nous : Javascript ou PHP ? Pour répondre à cette question, nous avons regardé de quoi le forum avait besoin pour fonctionner. Il...
+Qui dit forum dit site dynamique. Deux choix s'offraient donc à nous : Javascript ou PHP ? Pour répondre à cette question, nous avons regardé de quoi le forum avait besoin pour fonctionner. Nous avons besoin d'une base de données stockant les comptes des utilisateurs, ainsi que les messages postés. Le JS pur coté client ne permet pas de communiquer avec une base de données. Et même si c'était possible, le JS est exécuté dans le navigateur, et est donc modifiable directement dans le navigateur. Les plus malins auraient donc pu jouer avec notre base de données comme si de rien n'était. 
 <br /><br />
-La deuxième est une raison de sécurité parce qu'il faut sécuriser les compte utilisateur et notament les mots de passe, avec le PHP cela est relativement facile à faire alors qu'avec l'alternative qui aurais été d'utilisé java-script cela n'aurais pas été possible. De plus le java-script s'éxecute sur la machine de chaque utilisateur, se qui est gourment en ressource pour eux et donc obligerai à avoir une assez bonne puissance de calcule alors qu'avec le PHP le code s'execute sur le serveur, se qui fais que n'importe qui avec une machine capable de faire tourner un navigateur peut aller sur notre forum.
+Le PHP, en plus d'avoir une syntaxe assez simple, peut être mélangé à des pages HTML, contrairement à Javascript qui doit utiliser des méthodes particulières pour récupérer et modifier des éléments de la page html. PHP possède également des fonctions pour chiffrer les mots de passe, ce qui est bien utile puisqu'au lieu de stocker le mot de passe en dur dans la base de données, on stocke le mot de passe "hashé". PHP est assez simple d'utilisation mais reste très puissant.
 
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.2-Docker
-Comme nous avons utiliser du PHP il nous fallais forcément un serveur pour pouvoir tester notre code et il faudra aussi un serveur pour distribuer le forum. Nous avons donc fais le choix d'utiliser docker parce que c'est simple d'utilisation, nous avons simplement à créée une image puis un container contenant notre code et l'image puis c'est tout, si ont veut changer de serveur ont à simplement à déplacé le container. C'est donc très simple d'utilisation et de maintenance.
+PHP est très utile, mais il faut un serveur dédié pour l'exécuter. C'est là que Docker entre en scène. Docker est un logiciel de virtualisation ayant pour particularité de faire des machines virtuelles, appelées conteneurs, très légères basées sur des "images". Une image est une configuration particulière que l'on peut appliquer à un conteneur Docker. Via le Dockerfile qui permet de créer l'image répondant à notre besoin, on peut très facilement créer des serveurs grâce aux conteneurs, en exposant les ports adéquats.
 <br /><br />
-L'image est ... ***Expliquer ce qu'est l'image***
+Notre Dockerfile part d'une base Debian et installe les paquets nécessaires à notre forum : Serveur apache, MariaDB (Une implémentation MySQL Open Source), PHP, PHP-mysql. Elle expose ensuite les ports requis pour se connecter au serveur, puis exécute le script bash de configuration.
+
 
 
 # 3-Problème rencontré
