@@ -5,17 +5,16 @@ https://florobart.github.io/docker-sae203/
     <br /><br />
     <h1> Sommaire : </h1>
     <br />
-    <h2> 1-Présentation projet     </h2>
-    <h2> 2-Technologie utiliser    </h2>
-    <h2> 3-Les problèmes rencontré </h2>
+    <h2> 1-Présentation du projet     </h2>
+    <h2> 2-Technologie utilisées    </h2>
+    <h2> 3-Les problèmes rencontrés </h2>
     <h2> 4-Utilisation du projet   </h2>
 </div>
 
 <br /><br />
 
 # 1-Présentation du projet
-Notre projet est la distribution d'un forum de discution libre, c'est à dire sans sujet de discution prédéfinie. Un forum de discution.
-Le forum on peut créer des topics, les rejoindres, discutter, répondre à une réponse ou même à la question initiale.
+Notre projet consiste a pouvoir mettre en place un forum de discussion.
 
 # 2-Technologie utiliser
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.1-PHP
