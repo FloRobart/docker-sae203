@@ -28,12 +28,12 @@ Notre Dockerfile part d'une base Debian et installe les paquets nécessaires à 
 
 
 
-# 3-Problème rencontré
+# 3-Problèmes rencontrés
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; Git for windows
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Problème
-Quand on créé un fichier sous linux et que l'on exécute la commande "*git clone*" depuis windows, les séquences de fin de ligne de linux sont converties pour windows par git, passant de "\n" pour linux à "\r\n" pour windows.
+Lorsque l'on créé un fichier sous linux et que l'on exécute la commande "*git clone*" depuis windows, les séquences de fin de ligne de linux sont converties pour windows par git, passant de "\n" pour linux à "\r\n" pour windows.
 
 Cela ne pose pas de problème pour la majorité des fichiers, sauf pour les scripts bash. En effet, bash n'arrive pas à lire les "\r". Le problème c'est que notre container sur lequel tourne le serveur utilise une script bash pour se configurer. Ce problème empêche donc notre conteneur Docker de tout simplement démarrer.
 
@@ -48,7 +48,7 @@ Le booléen à la fin de la commande définit le statut de la configuration, tru
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Problème
 
-Lorsqu'un utilisateur écrit un topic, si on ne traite pas le texte qu'il saisit, il est possible qu'il insère du code HTML dans le topic et qu'il s'affiche dans la page. C'est dangereux car il pourrait re-diriger les utilisateur sur des pages malveillantes.
+Lorsqu'un utilisateur écrit un topic, si on ne traite pas le texte qu'il saisit, il est possible qu'il insère du code HTML dans le topic et qu'il s'affiche dans la page. C'est dangereux car il pourrait rediriger les utilisateurs sur des pages malveillantes.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
 
@@ -64,28 +64,30 @@ qui remplace les caractères des balises html par des équivalents.
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.1-Comment s'inscrire
 Pour s'inscrire, il suffit de cliquer sur le bouton "*s'inscrire*" en haut à droite de la page principale, puis de remplir les informations de son choix. Si votre pseudonyme n'a pas déjà été choisi par quelqu'un d'autre, une page confirmant votre inscription s'affichera et vous serez redirigés vers l'accueil.
 
-## &nbsp;&nbsp;&nbsp;&nbsp; 4.2-Comment ce connecter
+## &nbsp;&nbsp;&nbsp;&nbsp; 4.2-Comment se connecter
 Il n'y a pas de méthode de connexion dès l'arrivée sur le forum, cependant lors de la création d'un topic ou d'une réponse à un topic, votre nom d'utilisateur et votre mot de passe vous seront demandés.
-Par manque de temps nous n'avons pas fait en sorte que l'utilisateur reste connecter sur le site mais nous avions à deux façon de la faire.
+Par manque de temps, nous n'avons pas fait en sorte que l'utilisateur reste connecté sur le site mais nous avions à deux façon de la faire.
 <br /> <br />
-La première façon et de mettre le compte de l'utilisateur dans les cookies, le problème c'est que cette solution n'est pas du tout sécurisé, nous aurions donc opté pour le deuxième solution qui est un système de token qui permet ***expliquer brièvement le principe des tokens***. Si nous avions eu le temps nous aurions donc réaliser cette solution qui est la plus sécurisé.
+La première façon est de mettre le compte de l'utilisateur dans les cookies, le problème c'est que cette solution n'est pas du tout sécurisée, nous aurions donc pu opter pour la deuxième solution qui est un système de token qui permet de stocker une clé temporaire dans les cookies, valable uniquement pendant une période très limitée. Malheureusement, nous avons appris toutes les notions de PHP utilisées dans le forum durant la SAÉ, et le temps qui nous restait ne nous a pas permi d'approfondir cette notion.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.3-Comment créer un topic
 Pour créer un topic, voici les étapes :
 
-- Cliquer sur le button, créer un topic <br />
-- Mettre un sujet au topic             <br />
-- Mettre vos identifiant               <br />
+- Cliquer sur "Nouveau Topic"          <br />
+- Rédiger le topic                     <br />
+- Remplir ses identifiants             <br />
+- Cliquer sur "Poster le topic"        <br />
 
-Félication vous avez créer un topic.
+Félication vous avez créé un topic.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.4-Comment répondre à un topic
 Pour répondre à un topic, voici les étapes :
 
-- Cliquer sur le topic en question <br />
-- Cliquer sur répondre             <br />
-- Ecrivez votre réponse           <br />
-- Mettez vos identifiant          <br />
+- Cliquer sur le topic en question  <br />
+- Cliquer sur "Répondre à ce topic" <br />
+- Rédiger sa réponse                <br />
+- Remplir ses identifiants          <br />
+- Cliquer sur "Poster la réponse"   <br />
 
-Félication vous avez répondu à un topic.
+Félication vous avez répondu à un topic existant.
 
