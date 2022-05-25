@@ -42,7 +42,7 @@ Lorsque l'on créé un fichier sous linux et que l'on exécute la commande "*git
 Cela ne pose pas de problème pour la majorité des fichiers, sauf pour les scripts bash. En effet, bash n'arrive pas à lire les "\r". Le problème c'est que notre container sur lequel tourne le serveur utilise une script bash pour se configurer. Ce problème empêche donc tout simplement notre conteneur Docker de démarrer.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Solution
-La solution est donc de désactiver la conversion automatique des "\n", ce que nous avons fait grâce à la commande
+La solution est donc de désactiver la conversion automatique des "\n" en "\r\n", ce que nous avons fait grâce à la commande
 
     git config --global core.autocrlf false
 
