@@ -6,6 +6,7 @@
 $dbuser = 'review_site';
 $dbpass = 'JxSLRkdutW';
 $conn = new mysqli("localhost", $dbuser, $dbpass, "forum");
+$conn->set_charset("utf8");
 
 if (! $conn) {
   echo "HE HE HE HA";
