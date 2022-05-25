@@ -22,7 +22,7 @@ Notre projet consiste a pouvoir mettre en place un forum de discussion facilemen
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.1-PHP
 Qui dit forum dit site dynamique. Deux choix s'offraient donc à nous : Javascript (JS) pur ou PHP ? Pour répondre à cette question, nous avons regardé de quoi le forum avait besoin pour fonctionner. Nous avons besoin d'une base de données stockant les comptes des utilisateurs, ainsi que les messages postés. Le JS pur coté client ne permet pas de communiquer avec une base de données. Et même si c'était possible, le JS est exécuté dans le navigateur, et est donc modifiable directement dans celui-ci. Les plus malins auraient donc pu jouer avec notre base de données comme si de rien n'était. 
 <br /><br />
-Le PHP, en plus d'avoir une syntaxe assez simple, peut être mélangé à des pages HTML, contrairement à Javascript qui doit utiliser des méthodes particulières pour récupérer et modifier des éléments de la page html. PHP possède également des fonctions pour chiffrer les mots de passe, ce qui est bien utile puisqu'au lieu de stocker le mot de passe en dur dans la base de données, on stocke le mot de passe "hashé". PHP est assez simple d'utilisation mais reste très puissant.
+Le PHP quant à lui, en plus d'avoir une syntaxe assez simple, peut être mélangé à des pages HTML, contrairement à Javascript qui doit utiliser des méthodes particulières pour récupérer et modifier des éléments de la page html. PHP possède également des fonctions pour chiffrer les mots de passe, ce qui est bien utile puisqu'au lieu de stocker le mot de passe en dur dans la base de données, on stocke le mot de passe "hashé". PHP est assez simple d'utilisation mais reste très puissant.
 
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 2.2-Docker
