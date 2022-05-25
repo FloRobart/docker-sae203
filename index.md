@@ -1,5 +1,9 @@
 <div align="center">
     <h1><strong> Compte rendu SAE 2.03 </strong></h1>
+    <p> Équipe 25 : </p>
+    <p> BIZET Florian </p>
+    <p> GROUT Ruben   </p>
+    <p> ROBART Floris </p>
     <br /><br />
     <h1> Sommaire : </h1>
     <br />
