@@ -79,8 +79,8 @@ VALUES ("Exemple de topic", "Ce topic sert d'exemple", 1),
        ("Exemple de topic", "Ce topic sert d'exemple", 1),
        ("Exemple de topic", "Ce topic sert d'exemple", 1),
        ("Exemple de topic", "Ce topic sert d'exemple", 1),
-       ("Ou bien en créer un nouveau", "oui", 1),
-       ("Vous pouvez défiler la liste complète des topics présents", "en effet", 1),
+       ("Ou bien en creer un nouveau", "oui", 1),
+       ("Vous pouvez defiler la liste complete des topics presents", "en effet", 1),
        ("Bienvenue sur le forum !", "bonsoir", 1);
 
 
