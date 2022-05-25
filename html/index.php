@@ -19,6 +19,9 @@ if (! $conn) {
 $query = "SELECT t.*, u.pseudo FROM Topic t JOIN Users u ON t.idUser = u.idUser ORDER BY idTopic DESC LIMIT " . ($topicCount*($page-1)) . "," . ($topicCount*$page) . ";";
 
 $queryResult = $conn->query($query);
+
+$pageCount = ($conn->query("SELECT COUNT(*) FROM Topic;")->fetch_array()[0])/$topicCount;
+
 ?>
 
 <!-- html page -->
@@ -51,8 +54,8 @@ $queryResult = $conn->query($query);
 				?>
 			</table>
 			<?php 
-				echo "<a href='index.php?page=" . ($page-1) . "'>Page " . ($page-1) . "</a>";
-				echo "<a href='index.php?page=" . ($page+1) . "'>Page " . ($page+1) . "</a>";
+				if ($page > 1) {echo "<a href='index.php?page=" . ($page-1) . "'>Page " . ($page-1) . "</a>";}
+				if ($page < $pageCount) {echo "<a href='index.php?page=" . ($page+1) . "'>Page " . ($page+1) . "</a>";}
 			?>
 
 		</main>
