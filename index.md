@@ -66,7 +66,7 @@ qui remplace les caractères des balises html par des équivalents.
 # 4-Utilisation du projet
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.1-Comment s'inscrire
-Pour s'inscrire, il suffit de cliquer sur le bouton "*s'inscrire*" en haut à droite de la page principale, puis de remplir les informations de son choix. Si votre pseudonyme n'a pas déjà été choisi par quelqu'un d'autre, une page confirmant votre inscription s'affichera et vous serez redirigés vers l'accueil.
+Pour s'inscrire, il suffit de cliquer sur le bouton "*s'inscrire*" en haut à droite de la page principale, puis de remplir les informations de son choix. Si votre pseudonyme n'a pas déjà été choisi par quelqu'un d'autre, une page confirmant votre inscription s'affichera et vous serez redirigés vers l'accueil. Dans le cas contraire un message d'erreur est affiché et vous êtes inviter à entrer un nouveau pseudonyme.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.2-Comment se connecter
 Il n'y a pas de méthode de connexion dès l'arrivée sur le forum, cependant lors de la création d'un topic ou d'une réponse à un topic, votre nom d'utilisateur et votre mot de passe vous seront demandés.
