@@ -84,9 +84,6 @@ VALUES ("Exemple de topic", "Ce topic sert d'exemple", 1),
        ("Bienvenue sur le forum !", "bonsoir", 1);
 
 
-INSERT INTO Reponse (idTopic, contenu, idUser)
-VALUES (1, "t'es guez bro", 1);
-
 GRANT ALL ON forum.* to review_site@localhost IDENTIFIED BY 'JxSLRkdutW';
 
 /*
