@@ -70,9 +70,9 @@ Pour s'inscrire, il suffit de cliquer sur le bouton "*s'inscrire*" en haut à dr
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.2-Comment se connecter
 Il n'y a pas de méthode de connexion dès l'arrivée sur le forum, cependant lors de la création d'un topic ou d'une réponse à un topic, votre nom d'utilisateur et votre mot de passe vous seront demandés.
-Par manque de temps, nous n'avons pas fait en sorte que l'utilisateur reste connecté sur le site mais nous avions à deux façon de la faire.
+Par manque de temps, nous n'avons pas fait en sorte que l'utilisateur reste connecté sur le site mais nous avons penser à deux façon de la faire.
 <br /> <br />
-La première façon est de mettre le compte de l'utilisateur dans les cookies, le problème c'est que cette solution n'est pas du tout sécurisée, nous aurions donc pu opter pour la deuxième solution qui est un système de token qui permet de stocker une clé temporaire dans les cookies, valable uniquement pendant une période très limitée. Malheureusement, nous avons appris toutes les notions de PHP utilisées dans le forum durant la SAÉ, et le temps qui nous restait ne nous a pas permi d'approfondir cette notion.
+La première façon est de mettre le compte de l'utilisateur dans les cookies, le problème c'est que cette solution n'est pas du tout sécurisée, nous aurions donc opter pour la deuxième solution qui est un système de token qui permet de stocker une clé temporaire dans les cookies, valable uniquement pendant une période très limitée. Malheureusement, nous avons appris toutes les notions de PHP utilisées dans le forum durant la SAÉ, et le temps qui nous restait ne nous a pas permi d'approfondir cette notion.
 
 ## &nbsp;&nbsp;&nbsp;&nbsp; 4.3-Comment créer un topic
 Pour créer un topic, voici les étapes :
