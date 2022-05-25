@@ -1,11 +1,11 @@
 <div align="center">
     <h1><strong> Compte rendu SAE 2.03 </strong></h1>
-    <p> Équipe 25 : </p>
-    <p> BIZET Florian </p>
-    <p> GROUT Ruben   </p>
-    <p> ROBART Floris </p>
+    <h2> Équipe 25     </h2>
+    <h3> BIZET Florian </h3>
+    <h3> GROUT Ruben   </h3>
+    <h3> ROBART Floris </h3>
     <br /><br />
-    <h1> Sommaire : </h1>
+    <h1> Sommaire </h1>
     <br />
     <h2> 1-Présentation du projet   </h2>
     <h2> 2-Technologie utilisées    </h2>
